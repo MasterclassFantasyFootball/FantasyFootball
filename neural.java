@@ -9,5 +9,13 @@ int inputs;
 double normailzedData;
 int outPut;
 
+
+learn(){
+
+}
+
+predict(){
+
+}
 }
 	

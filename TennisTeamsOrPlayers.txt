@@ -1,0 +1,10 @@
+1,Novak Djokovic
+2,Roger Federer
+3,Andy Murray
+4,David Ferrer
+5,Rafael Nadal
+6,Tomas Berdych
+7,Juan Martin Potro
+8,Jo Wilfried Tsonga
+9,Janko Tipsarevic
+10,Richard Gasquet

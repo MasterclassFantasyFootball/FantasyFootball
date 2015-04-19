@@ -8,6 +8,7 @@ public class chooseCaptainClass
 	public static ArrayList<String> teamName = new ArrayList<String>();
 	public static ArrayList<String> onRoster = new ArrayList<String>();
 	public static ArrayList<String> starPlayer = new ArrayList<String>();
+	public static ArrayList<String> playerValue = new ArrayList<String>();
 	public static String details = "UsersTeams.txt";
 	public static String line = "";
 	public static String cvsSplitBy = ",";
@@ -93,6 +94,7 @@ public class chooseCaptainClass
 				teamName.add(allData[2]);
 				onRoster.add(allData[3]);
 				starPlayer.add(allData[4]);
+				playerValue.add(allData[5]);
 			}
 		}
 		catch (FileNotFoundException e)
@@ -142,7 +144,7 @@ public class chooseCaptainClass
 		for (int k = 0; k < (position.size()); k++)
 		{
 			printW.print(position.get(k) + "," + playerName.get(k) + "," + teamName.get(k) + ","
-			+ onRoster.get(k) + "," + starPlayer.get(k) + "\n");
+			+ onRoster.get(k) + "," + starPlayer.get(k) + "," + playerValue.get(k) + "\n");
 		}
 		printW.close();
 	}

@@ -28,8 +28,8 @@ public class football
                 Choice = Integer.parseInt(menuOption);
                 while((menuOption != null) && (!(menuOption.equals("0"))))
                 {
-                    //JOHNEDIT Added 5th option
-					menuOption = getUserSelection("1. View a list of fixtures played to date and the outcome of these fixtures.\n2. Enter the outcome for a fixture.\n3. View a list of the fixtures yet to be played.\n4. View an up-to-date leaderboard for a league.\n5. Manage Team", 5);
+                    //JOHNEDIT Added 5th & 6th option
+					menuOption = getUserSelection("1. View a list of fixtures played to date and the outcome of these fixtures.\n2. Enter the outcome for a fixture.\n3. View a list of the fixtures yet to be played.\n4. View an up-to-date leaderboard for a league.\n5. Manage Team.\n6. Manage Transfers", 6);
                     if (menuOption != null)
                     {
                         String teamsFilename = "";
@@ -73,6 +73,9 @@ public class football
                             break;
 							// JOHNEDIT added this option.
 							case 5: manageTeam(hardCodeUserID);
+                            break;
+							// JOHNEDIT added this option.
+							case 6: manageTransfers(hardCodeUserID);
                             break;
                         }
                     }
@@ -418,5 +421,12 @@ public class football
 	{
 		manageTeamClass execute = new manageTeamClass();
 		execute.manageTeam(hardCodeUserID);
+	}
+	
+	//JOHNEDIT added this class
+	public static void manageTransfers(String hardCodeUserID) throws IOException
+	{
+		manageTransfersClass execute = new manageTransfersClass();
+		execute.manageTransfers(hardCodeUserID);
 	}
 }

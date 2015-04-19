@@ -1,0 +1,20 @@
+1,Arsenal
+2,Sunderland
+3,Everton
+4,Manchester United
+5,Fulham
+6,Norwich City
+7,Manchester City
+8,Southampton
+9,Newcastle United
+10,Tottenham Hotspur
+11,Queens Park Rangers
+12,Swansea City
+13,Reading
+14,Stoke City
+15,West Bromwich Albion
+16,Liverpool
+17,West Ham United
+18,Aston Villa
+19,Wigan Athletic
+20,Chelsea

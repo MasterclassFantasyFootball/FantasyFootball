@@ -19,7 +19,7 @@ public class chooseCaptainClass
 		//select player to be made captain
 		Object [] selection = {"Goalkeeper 1", "Goalkeeper 2", "Defender 1", "Defender 2", "Defender 3", "Defender 4", "Defender 5",
 		"Midfielder 1", "Midfielder 2", "Midfielder 3", "Midfielder 4", "Midfielder 5", "Forward 1", "Forward 2", "Forward 3" };
-		Object value = JOptionPane.showInputDialog(null, "Choose player to take off roster:","", 1 , null, selection, selection[0]);
+		Object value = JOptionPane.showInputDialog(null, "Choose who to make captain:","", 1 , null, selection, selection[0]);
 		
 		if(value.equals("Goalkeeper 1"))
 		{

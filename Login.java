@@ -9,19 +9,27 @@ public class Login
 	public static void main(String[] args) throws IOException 
 	{
 		User user = getUsernamePassword();
-
+		//JOHN EDIT passes correct user to classes
+		String hardCodeUserID = user.username;
 		String menuOption = "";
-
 		if(user.type != 0 )
 		{
 			while((menuOption != null) && (!(menuOption.equals("0"))))
 			{
 				if(user.type == 1)
 				{
-					menuOption = getUserSelection("You have logged in successfully!", 1);
+					menuOption = getUserSelection("You have logged in successfully!", 2);
 					if (menuOption != null)
 					{
-						doAction(new RegisteredUser(user), Integer.parseInt(menuOption));
+						doAction(new RegisteredUser(user), Integer.parseInt(menuOption), hardCodeUserID);
+					}
+					else if (menuOption == "1")
+					{
+						doAction(new RegisteredUser(user), Integer.parseInt(menuOption), hardCodeUserID);
+					}
+					else if (menuOption == "2")
+					{
+						doAction(new RegisteredUser(user), Integer.parseInt(menuOption), hardCodeUserID);
 					}
 				}
 			}		
@@ -30,7 +38,7 @@ public class Login
 
 	private static String getUserSelection(String menuOption, int choices)
 	{
-		menuOption += "\n\n0. Exit application.\n\n";
+		menuOption += "\n\n1. Manage Team\n2. Make Transfer\n0. Exit application.\n\n";
 
 		boolean validInput = false;
 
@@ -113,14 +121,31 @@ public class Login
 		}
 	}
 
-	private static void doAction(RegisteredUser User, int menuChoice) throws IOException
+	private static void doAction(RegisteredUser User, int menuChoice, String hardCodeUserID) throws IOException
 	{
 		switch(menuChoice)
 		{
 		// This will be where we put our use cases for our RegisteredUser.
+		//JOHN EDIT
+		case 1: manageTeam(hardCodeUserID);
+		break;
+		//JOHN EDIT
+		case 2: manageTransfers(hardCodeUserID);
+		break;
 		}
 	}
-
 	
-
+	//JOHNEDIT added this class
+	public static void manageTeam(String hardCodeUserID) throws IOException
+	{
+		manageTeamClass execute = new manageTeamClass();
+		execute.manageTeam(hardCodeUserID);
+	}
+	
+	//JOHNEDIT added this class
+	public static void manageTransfers(String hardCodeUserID) throws IOException
+	{
+		manageTransfersClass execute = new manageTransfersClass();
+		execute.manageTransfers(hardCodeUserID);
+	}
 }

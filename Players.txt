@@ -1,80 +1,78 @@
-Defender,Player0101,Team021,22
-Defender,Player0102,Team054,28
-Defender,Player0103,Team011,44
-Defender,Player0104,Team045,32
-Defender,Player0105,Team065,27
-Defender,Player0106,Team021,22
-Defender,Player0107,Team054,33
-Defender,Player0108,Team011,44
-Defender,Player0109,Team045,36
-Defender,Player0110,Team065,29
-Defender,Player0111,Team021,22
-Defender,Player0112,Team054,33
-Defender,Player0113,Team011,41
-Defender,Player0114,Team045,27
-Defender,Player0115,Team065,36
-Defender,Player0116,Team021,22
-Defender,Player0117,Team054,32
-Defender,Player0118,Team011,40
-Defender,Player0119,Team045,42
-Defender,Player0120,Team065,22
-Forward,Player0301,Team021,42
-Forward,Player0302,Team001,19
-Forward,Player0303,Team003,33
-Forward,Player0304,Team003,33
-Forward,Player0305,Team021,22
-Forward,Player0306,Team001,17
-Forward,Player0307,Team003,45
-Forward,Player0308,Team003,33
-Forward,Player0309,Team021,52
-Forward,Player0310,Team001,13
-Forward,Player0311,Team003,33
-Forward,Player0312,Team003,33
-Forward,Player0313,Team021,22
-Forward,Player0314,Team001,11
-Forward,Player0315,Team003,39
-Forward,Player0316,Team003,33
-Forward,Player0317,Team021,22
-Forward,Player0318,Team001,34
-Forward,Player0319,Team003,29
-Forward,Player0320,Team003,33
-Goalkeeper,Player0001,Team021,45
-Goalkeeper,Player0002,Team009,30
-Goalkeeper,Player0003,Team009,27
-Goalkeeper,Player0004,Team011,32
-Goalkeeper,Player0005,Team011,34
-Goalkeeper,Player0006,Team011,27
-Goalkeeper,Player0007,Team009,31
-Goalkeeper,Player0008,Team009,33
-Goalkeeper,Player0009,Team009,33
-Goalkeeper,Player0010,Team009,32
-Goalkeeper,Player0011,Team009,33
-Goalkeeper,Player0012,Team021,23
-Goalkeeper,Player0013,Team021,19
-Goalkeeper,Player0014,Team021,23
-Goalkeeper,Player0015,Team021,23
-Goalkeeper,Player0016,Team065,43
-Goalkeeper,Player0017,Team065,30
-Goalkeeper,Player0018,Team054,23
-Goalkeeper,Player0019,Team054,24
-Goalkeeper,Player0020,Team054,26
-Midfielder,Player0201,Team021,66
-Midfielder,Player0202,Team032,22
-Midfielder,Player0203,Team021,19
-Midfielder,Player0204,Team013,22
-Midfielder,Player0205,Team021,31
-Midfielder,Player0206,Team021,21
-Midfielder,Player0207,Team013,22
-Midfielder,Player0208,Team021,18
-Midfielder,Player0209,Team021,31
-Midfielder,Player0210,Team021,33
-Midfielder,Player0211,Team013,22
-Midfielder,Player0212,Team021,24
-Midfielder,Player0213,Team021,41
-Midfielder,Player0214,Team021,19
-Midfielder,Player0215,Team013,22
-Midfielder,Player0216,Team021,21
-Midfielder,Player0217,Team021,31
-Midfielder,Player0218,Team021,43
-Midfielder,Player0219,Team013,22
-Midfielder,Player0220,Team021,19
+Defender,Tyler Blackett,Manchester United,22
+Defender,Jonny Evans,Manchester United,28
+Defender,Phil Jones,Manchester United,44
+Defender,Andrew Kellett,Manchester United,32
+Defender,Calum Chambers,Arsenal,27
+Defender,Mathieu Debuchy,Arsenal,22
+Defender,Gabriel Paulista,Arsenal,33
+Defender,Kieran Gibbs,Arsenal,44
+Defender,Azpilicueta,Chelsea,36
+Defender,Gary Cahill,Chelsea,29
+Defender,Andreas Christensen,Chelsea,22
+Defender,Filipe Luis,Chelsea,33
+Defender,Alberto Moreno,Liverpool,41
+Defender,Jon Flanagan,Liverpool,27
+Defender,Glen Johnson,Liverpool,36
+Defender,Jose Enrique,Liverpool,22
+Defender,Dedryk Boyata,Manchester City,32
+Defender,Gael Clichy,Manchester City,40
+Defender,Martin Demichelis,Manchester City,42
+Defender,Aleksandar Kolarov,Manchester City,22
+Forward,Radamel Falcao,Manchester United,42
+Forward,Wayne Rooney,Manchester United,19
+Forward,Robin van Persie,Manchester United,33
+Forward,James Wilson,Manchester United,33
+Forward,Olivier Giroud,Arsenal,22
+Forward,Serge Gnabry,Arsenal,17
+Forward,Alex Iwobi,Arsenal,45
+Forward,Alex Oxlade-Chamberlain,Arsenal,33
+Forward,Isaiah Brown,Chelsea,52
+Forward,Diego Costa,Chelsea,13
+Forward,Didier Drogba,Chelsea,33
+Forward,Dominic Solanke,Chelsea,33
+Forward,Mario Balotelli,Liverpool,22
+Forward,Fabio Borini,Liverpool,11
+Forward,Jordon Ibe,Liverpool,39
+Forward,Rickie Lambert,Liverpool,33
+Forward,Kun Aguero,Manchester City,22
+Forward,Thierry Ambrose,Manchester City,34
+Forward,Wilfried Bony,Manchester City,29
+Forward,Bersant Celina,Manchester City,33
+Goalkeeper,Ben Amos,Manchester United,40
+Goalkeeper,De Gea,Manchester United,30
+Goalkeeper,Anders Lindegaard,Manchester United,27
+Goalkeeper,Victor Valdes,Manchester United,32
+Goalkeeper,Ryan Huddart,Arsenal,34
+Goalkeeper,Matt Macey,Arsenal,27
+Goalkeeper,David Ospina,Arsenal,31
+Goalkeeper,Wojciech Szczesny,Arsenal,33
+Goalkeeper,Mitchell Beeney,Chelsea,37
+Goalkeeper,Jamal Blackman,Chelsea,32
+Goalkeeper,Petr Cech,Chelsea,19
+Goalkeeper,Thibaut Courtois,Chelsea,23
+Goalkeeper,Brad Jones,Liverpool,19
+Goalkeeper,Simon Mignolet,Liverpool,23
+Goalkeeper,Danny Ward,Liverpool,29
+Goalkeeper,Willy Caballero,Manchester City,30
+Goalkeeper,Joe Hart,Manchester City,23
+Goalkeeper,Richard Wright,Manchester City,26
+Midfielder,Ander Herrera,Manchester United,41
+Midfielder,Daley Blind,Manchester United,22
+Midfielder,Michael Carrick,Manchester United,19
+Midfielder,Angel Di Maria,Manchester United,22
+Midfielder,Francis Coquelin,Arsenal,31
+Midfielder,Abou Diaby,Arsenal,21
+Midfielder,Mathieu Flamini,Arsenal,22
+Midfielder,Glen Kamara,Arsenal,18
+Midfielder,Cesc Fabregas,Chelsea,31
+Midfielder,Juan Cuadrado,Chelsea,33
+Midfielder,Ruben Loftus-Cheek,Chelsea,22
+Midfielder,Eden Hazard,Chelsea,29
+Midfielder,Joe Allen,Liverpool,41
+Midfielder,Cameron Brannagan,Liverpool,19
+Midfielder,Emre Can,Liverpool,22
+Midfielder,Coutinho,Liverpool,21
+Midfielder,David Silva,Manchester City,31
+Midfielder,Fernandinho,Manchester City,40
+Midfielder,Fernando,Manchester City,22
+Midfielder,George Glendon,Manchester City,19

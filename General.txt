@@ -1,4 +1,4 @@
-Premiership,Rugby,Tennis
-3,2,1
-1,1,0
-0,0,0
+Premiership
+3
+1
+0

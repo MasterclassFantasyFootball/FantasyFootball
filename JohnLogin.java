@@ -1,28 +1,30 @@
-/*import java.io.IOException;
+import java.io.IOException;
 import java.util.ArrayList;
+
 import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-public class Login 
+public class JohnLogin 
 {
 	public static void main(String[] args) throws IOException 
 	{
 		User user = getUsernamePassword();
-
+		//JOHN EDIT passes correct user to classes
+		String hardCodeUserID = user.username;
 		String menuOption = "";
-
 		if(user.type != 0 )
 		{
 			while((menuOption != null) && (!(menuOption.equals("0"))))
 			{
 				if(user.type == 1)
 				{
-					menuOption = getUserSelection("1. Make Transfer\n" + "2. Manage Team", 1);
+					menuOption = getUserSelection( "Please make a selection from the list below...\n\n"+ "1. View Remaining League Fixtures\n" + "2. View League Statistics\n" + "3. View Previous Results\n" + "4. Manage Team\n" + "5. Make Transfer", 5);
 					if (menuOption != null)
 					{
-						doAction(new RegisteredUser(user), Integer.parseInt(menuOption));
+						doAction(new RegisteredUser(user), Integer.parseInt(menuOption), hardCodeUserID);
 					}
+					
 				}
 			}		
 		}
@@ -42,7 +44,7 @@ public class Login
 
 		while(!(validInput))
 		{
-			selection = JOptionPane.showInputDialog(null, menuOption, "Please make a selection from the list below...", 3);
+			selection = JOptionPane.showInputDialog(null, menuOption, "Master Class Fantasy Football", 3);
 			if(selection == null || selection.matches(menuChoicePattern))
 			{
 				validInput = true;
@@ -113,14 +115,67 @@ public class Login
 		}
 	}
 
-	private static void doAction(RegisteredUser User, int menuChoice) throws IOException
+	private static void doAction(RegisteredUser user, int menuChoice, String hardCodeUserID) throws IOException
 	{
 		switch(menuChoice)
 		{
+		case 1: viewFixtures();
+		break;
+		
+		case 2: viewStatistics();
+		break;
+		
+		case 3: viewResults();
+		break;
 			
+		case 4: manageTeam(hardCodeUserID);
+		break;
+
+		case 5: manageTransfers(hardCodeUserID);
+		break;
 		}
 	}
+	
+	public static void manageTeam(String hardCodeUserID) throws IOException
+	{
+		manageTeamClass execute = new manageTeamClass();
+		execute.manageTeam(hardCodeUserID);
+	}
+	
+	public static void manageTransfers(String hardCodeUserID) throws IOException
+	{
+		manageTransfersClass execute = new manageTransfersClass();
+		execute.manageTransfers(hardCodeUserID);
+	}
+	
+	
+	
+	public static void viewStatistics() throws IOException
+	{
+		ViewStatistics execute = new ViewStatistics();
+		execute.Statistics();
+	}
+	
+	public static void viewResults() throws IOException
+	{
+		ArrayList<ArrayList<String>> teamsOrPlayers = FileManip.Read("PremiershipTeamsOrPlayers.txt");
+		ArrayList<ArrayList<String>> fixtures = FileManip.Read("PremiershipFixtures.txt");
+		ArrayList<ArrayList<String>> results = FileManip.Read("PremiershipResults.txt");
+		
+		ViewResults execute = new ViewResults();
+		execute.ViewResultsPlayedToDate(teamsOrPlayers, fixtures, results);
+	}
+	
+	public static void viewFixtures() throws IOException
+	{
+		ArrayList<ArrayList<String>> fixtures = FileManip.Read("PremiershipFixtures.txt");
+		ArrayList<ArrayList<String>> teamsOrPlayers = FileManip.Read("PremiershipTeamsOrPlayers.txt");
+		int fixturesPlayedToDate = 0;
+		
+		ViewFixtures execute = new ViewFixtures();
+		execute.ViewRemainingFixtures(teamsOrPlayers,fixtures, fixturesPlayedToDate);
+	}
+}
 
 	
-
-}*/
+	

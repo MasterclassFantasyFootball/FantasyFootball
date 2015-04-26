@@ -1,5 +1,10 @@
+import java.awt.Dimension;
 import java.io.*;
+
 import javax.swing.JOptionPane;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
 import java.util.*;
 public class manageTransfersClass
 {
@@ -53,13 +58,24 @@ public class manageTransfersClass
 		int start = position.indexOf(hardCodeUserID);
 		//Prints to screen
 		System.out.println(hardCodeUserID);
+		String message= "";
 		for(int x = (start + 1); x < (start + 16); x++)
 		{
+			
+			message += position.get(x) + ", " + playerName.get(x) + ", " + teamName.get(x) + "- Player is worth: " + playerValue.get(x) + " points\n\n";
 			System.out.print(position.get(x) + ", ");
 			System.out.print(playerName.get(x) + ", ");
 			System.out.print(teamName.get(x) + "- Player is worth: ");
 			System.out.print(playerValue.get(x) + " points\n");
+		
 		}
+		
+		JTextArea textArea = new JTextArea(message);
+        JScrollPane scrollPane = new JScrollPane(textArea);  
+        textArea.setLineWrap(true);  
+        textArea.setWrapStyleWord(true); 
+        scrollPane.setPreferredSize( new Dimension( 450,450 ) );
+        JOptionPane.showMessageDialog(null, scrollPane, "Manage Transfers", JOptionPane.PLAIN_MESSAGE);
 	
 		//Choose player to take off
 		int numberPointsLeft = Integer.parseInt(playerValue.get(start));
@@ -143,7 +159,6 @@ public class manageTransfersClass
 			changeNumber = 15;
 			makeTransfer(hardCodeUserID, changeNumber, numberPointsLeft, start);
 		}
-		
 		
 	}
 	

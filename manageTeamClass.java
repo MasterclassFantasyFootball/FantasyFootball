@@ -1,5 +1,10 @@
+import java.awt.Dimension;
 import java.io.*;
+
 import javax.swing.JOptionPane;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
 import java.util.*;
 public class manageTeamClass
 {
@@ -55,14 +60,23 @@ public class manageTeamClass
 		int start = position.indexOf(hardCodeUserID);
 		//Prints to screen
 		System.out.println(hardCodeUserID);
+		String message = "";
+		System.out.print("Position      Name        Team    Starting  Captain\n");
 		for(int x = (start + 1); x < (start + 16); x++)
 		{
+			message += position.get(x) + ", " + playerName.get(x) + ", " + teamName.get(x) + ", " + onRoster.get(x) + ", " + starPlayer.get(x) + "\n\n";
 			System.out.print(position.get(x) + ", ");
 			System.out.print(playerName.get(x) + ", ");
 			System.out.print(teamName.get(x) + ", ");
 			System.out.print(onRoster.get(x) + ", ");
 			System.out.print(starPlayer.get(x) + "\n");
 		}
+		JTextArea textArea = new JTextArea(message);
+        JScrollPane scrollPane = new JScrollPane(textArea);  
+        textArea.setLineWrap(true);  
+        textArea.setWrapStyleWord(true); 
+        scrollPane.setPreferredSize( new Dimension( 400,400 ) );
+        JOptionPane.showMessageDialog(null, scrollPane, "Team Management", JOptionPane.PLAIN_MESSAGE);
 		
 		//Go to other classes
 		Object [] selection = {"Choose Captain", "Place Player On/Off Bench"};
